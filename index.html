@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Virtual Pet Generator - idris zahir</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🐾 Virtual Pet Generator</h1>
+
+  <div class="card">
+    <h2>Pet Profile!</h2>
+
+    <p><strong>Type:</strong> <span id="nameOut"></span></p>
+    <p><strong>Name:</strong> <span id="typeOut"></span></p>
+    <p><strong>Age:</strong> <span id="ageOut"></span></p>
+    <p><strong>Hungry:</strong> <span id="hungryOut"></span></p>
+    <p><strong>Favourite Hobby:</strong> <span id="moodOut"></span></p>
+    <p><strong>Mood:</strong> <span id="activityOut"></span></p>
+
+    <hr />
+    <p id="descriptionOut" class="description"></p>
+  </div>
+
+  <div class="card">
+    <h2>Customize</h2>
+
+    <label>
+      Change name of pet:
+      <input id="nameInput" type="text" placeholder="Enter a name..." />
+    </label>
+
+    <div class="row">
+      <button id="ageDownBtn" type="button">- Age</button> 
+      <button id="ageUpBtn" type="button">+ Age</button>
+    </div>
+
+    <div class="row">
+      <button id="toggleHungryBtn" type="button">Toggle Hungry</button>
+      <button id="newPetBtn" type="button">🎲 New Random Pet</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
