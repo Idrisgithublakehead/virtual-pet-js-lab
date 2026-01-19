@@ -34,7 +34,7 @@ function renderPet() {
   descriptionOut.textContent = "";
 }
 
-// now we need to actually display the function once the page loads in
+// now we need to actually display the function once the page loads in AND Render everything above
 renderPet();
 
 
