@@ -11,6 +11,22 @@ let isHungry = true;
 let favoriteActivities = ["flying", "sleeping", "exploring"]; // create an array right here
 let mood = "excited";               
 
+
+
+// ok so i did commit part one but now im coming back to the top and initliazing the random const variables
+
+// Random options for generating a pet
+const petTypes = ["monkey", "cat", "dragon", "hamster"];
+const moods = ["sad", "sleepy", "excited", "angry"];
+
+const activitiesByType = {
+  monkey: ["climbing trees", "swinging", "stealing snacks"],
+  cat: ["napping", "climbing", "chasing lasers"],
+  dragon: ["flying", "guarding treasure", "breathing sparks"],
+  hamster: ["running on a wheel", "snacking", "tunneling"]
+};
+
+
 // now we can Get output elements from the page USING DOM
 const nameOut = document.getElementById("nameOut");
 const typeOut = document.getElementById("typeOut");
