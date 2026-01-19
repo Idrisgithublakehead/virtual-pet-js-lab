@@ -1,0 +1,85 @@
+/* Reset + page layout */
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background-color: #eef3f8;
+    margin: 0;
+    padding: 30px 10px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+
+.card {
+    background-color: #ffffff;
+    max-width: 520px;
+    margin: 0 auto 25px auto;
+    padding: 22px 24px;
+    border-radius: 14px;
+    border: 1px solid #dde4ea;
+}
+
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+}
+
+
+.card p {
+    margin: 6px 0;
+    line-height: 1.5;
+}
+
+
+hr {
+    margin: 14px 0;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+}
+
+.description {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f7f9fc;
+    border-left: 4px solid #5c8df6;
+    font-style: italic;
+}
+
+
+.row {
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+button {
+    flex: 1;
+    padding: 8px 14px;
+    font-size: 0.95rem;
+    border-radius: 8px;
+    border: 1px solid #cdd6dd;
+    background-color: #f1f4f8;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e3e9f0;
+}
+
+
+input[type="text"] {
+    width: 100%;
+    margin-top: 6px;
+    padding: 8px 10px;
+    font-size: 0.95rem;
+    border-radius: 8px;
+    border: 1px solid #cfd6dc;
+}
