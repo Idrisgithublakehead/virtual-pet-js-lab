@@ -26,6 +26,10 @@ const activitiesByType = {
   hamster: ["running on a wheel", "snacking", "tunneling"]
 };
 
+function pickRandom(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
 
 // now we can Get output elements from the page USING DOM
 const nameOut = document.getElementById("nameOut");
@@ -50,8 +54,20 @@ function renderPet() {
   descriptionOut.textContent = "";
 }
 
+function generateRandomPet() {
+  petType = pickRandom(petTypes);
+  petAge = Math.floor(Math.random() * 16);
+  mood = pickRandom(moods);
+  isHungry = Math.random() < 0.5;
+
+  favoriteActivities = activitiesByType[petType];
+
+  renderPet();
+}
+
 // now we need to actually display the function once the page loads in AND Render everything above
-renderPet();
+generateRandomPet();
+
 
 
 
