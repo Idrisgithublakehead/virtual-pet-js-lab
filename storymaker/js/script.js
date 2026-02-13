@@ -20,3 +20,27 @@ let i2 = 0;
 let i3 = 0;
 let i4 = 0;
 let i5 = 0;
+
+
+
+
+/* ok next we can create const for all of our html buttons, and pickls
+we set thsese now and later can grab them because the get */
+
+const btn1 = document.getElementById("btn1");
+const btn2 = document.getElementById("btn2");
+const btn3 = document.getElementById("btn3");
+const btn4 = document.getElementById("btn4");
+const btn5 = document.getElementById("btn5");
+
+const buildBtn = document.getElementById("buildBtn");
+const randomBtn = document.getElementById("randomBtn");
+const resetBtn = document.getElementById("resetBtn");
+
+const pick1 = document.getElementById("pick1");
+const pick2 = document.getElementById("pick2");
+const pick3 = document.getElementById("pick3");
+const pick4 = document.getElementById("pick4");
+const pick5 = document.getElementById("pick5");
+
+const output = document.getElementById("outputText");
