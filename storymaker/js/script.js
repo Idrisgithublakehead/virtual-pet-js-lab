@@ -159,3 +159,23 @@ btn5.addEventListener("click", () => {
 
 
 
+
+
+
+// ---------ok this part is the main  Build Story Button ---------
+
+buildBtn.addEventListener("click", function () {
+
+  // so this code right here actually creates sentence using template string
+  const finalStory = `${pick1.textContent} ${pick2.textContent} ${pick3.textContent} ${pick4.textContent} ${pick5.textContent}.`;
+
+  // after we crate we can actually display sentence
+  output.textContent = finalStory;
+
+});
+
+
+
+
+
+
