@@ -1,0 +1,46 @@
+<!doctype html>
+
+<!-- Idrid Zahir assigment 1
+ 
+story maker, -->
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Storymaker</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- here we just connect the files with html-->
+</head>
+<body>
+
+  <main class="app">
+    <h1>Storymaker</h1>
+    <!-- add a title for the page, and a output sentence for the uesr-->
+    <p class="help">Hi, Click a part to cycle choices. Build the story when ready.</p>
+
+
+    <!-- create multiple buttons for the user to chose from-->
+    <section class="picks">
+      <button id="btn1" type="button">1) <span id="pick1">Choose subject</span></button>
+      <button id="btn2" type="button">2) <span id="pick2">Choose action</span></button>
+      <button id="btn3" type="button">3) <span id="pick3">Choose descriptor</span></button>
+      <button id="btn4" type="button">4) <span id="pick4">Choose object</span></button>
+      <button id="btn5" type="button">5) <span id="pick5">Choose location</span></button>
+    </section>
+
+    <section class="actions">
+      <button id="buildBtn" type="button" class="primary">Build Story</button>
+      <button id="randomBtn" type="button">Random</button>
+      <button id="resetBtn" type="button">Reset</button>
+    </section>
+
+    <section class="output">
+      <h2>Output</h2>
+      <p id="outputText">Your story will appear here.</p>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
