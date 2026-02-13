@@ -131,3 +131,31 @@ btn4.addEventListener("click", () => {
 });
 
 
+
+
+
+
+// --------- ok so this is the location setter ---------
+
+btn5.addEventListener("click", () => {
+
+  // here we can actually advance the index
+  i5++;
+
+  // now...if index goes past last item reset it all
+  if (i5 > locations.length - 1) {
+    i5 = 0;
+  }
+
+  // now update the visible text
+  pick5.textContent = locations[i5];
+
+});
+
+
+
+
+
+
+
+
