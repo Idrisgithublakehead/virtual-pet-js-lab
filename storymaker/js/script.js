@@ -179,3 +179,28 @@ buildBtn.addEventListener("click", function () {
 
 
 
+
+
+
+
+// ok so now for the random button extra step, i created a functon
+// that randomly indexs through manuall and builds an output sentence
+randomBtn.addEventListener("click", function () {
+
+  // pick random indexes manually
+  let s = subjects[Math.floor(Math.random() * subjects.length)];
+  let a = actions[Math.floor(Math.random() * actions.length)];
+  let d = descriptors[Math.floor(Math.random() * descriptors.length)];
+  let o = objects[Math.floor(Math.random() * objects.length)];
+  let l = locations[Math.floor(Math.random() * locations.length)];
+
+  // build sentence
+  output.textContent = s + " " + a + " " + d + " " + o + " " + l + ".";
+
+});
+
+
+
+
+
+
