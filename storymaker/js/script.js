@@ -72,3 +72,42 @@ btn1.addEventListener("click", () => {
   }
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// --------- ok now we create the action Button Logic ---------
+
+btn2.addEventListener("click", () => {
+
+  // this right here will actually display current action
+  pick2.textContent = actions[i2];
+  // and also This just moves to the next item in the array.
+
+  // increase counte
+   i2 += 1;
+
+  // reset manually if too it gets too high like over the array length
+  if (i2 === actions.length) {
+    i2 = 0;
+  }
+
+});
+
+
+
+
+
