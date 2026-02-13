@@ -79,16 +79,6 @@ btn1.addEventListener("click", () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
 // --------- ok now we create the action Button Logic ---------
 
 btn2.addEventListener("click", () => {
@@ -109,5 +99,35 @@ btn2.addEventListener("click", () => {
 
 
 
+
+
+// ok so here i actually just created a function for this button to change it up slightly
+btn3.addEventListener("click", function() {
+
+  // move index forward first
+  i3++;
+
+  // if we passed last item, restart
+  if (i3 > descriptors.length - 1) {
+    i3 = 0;
+  }
+
+  // now update the text
+  pick3.textContent = descriptors[i3];
+
+});
+
+
+
+
+
+btn4.addEventListener("click", () => {
+  pick4.textContent = objects[i4];
+
+  i4++;
+  if (i4 >= objects.length) {
+    i4 = 0;
+  }
+});
 
 
