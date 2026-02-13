@@ -1,0 +1,109 @@
+/* ok so the theme i just 
+for the website was a orange and blue to give a nice kid vibe
+ */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(120deg, #ff7a00, #0066cc);
+  color: #ffffff;
+  padding: 40px 20px;
+}
+
+/* this is the main card container css */
+.app {
+  max-width: 750px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 40, 0.75);
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* here we put the title and centered it  */
+h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.help {
+  text-align: center;
+  font-size: 15px;
+  opacity: 0.85;
+  margin-bottom: 25px;
+}
+
+.picks {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 25px;
+}
+
+.picks button {
+  background-color: #0077ff;
+  color: white;
+  padding: 14px;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.picks button:hover {
+  background-color: #005fcc;
+  border-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* this is for the actual Action buttons area */
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+
+.primary {
+  background-color: #ff7a00;
+  color: white;
+  font-weight: bold;
+  padding: 14px 18px;
+  border-radius: 12px;
+}
+
+.primary:hover {
+  background-color: #e06600;
+}
+
+
+.actions button:not(.primary) {
+  background-color: #ffffff;
+  color: #0066cc;
+  font-weight: 600;
+  padding: 14px 18px;
+  border-radius: 12px;
+}
+
+.actions button:not(.primary):hover {
+  background-color: #f2f2f2;
+}
+
+
+.output {
+  background-color: #ffffff;
+  color: #003366;
+  padding: 18px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+#outputText {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
