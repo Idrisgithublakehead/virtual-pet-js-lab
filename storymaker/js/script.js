@@ -44,3 +44,31 @@ const pick4 = document.getElementById("pick4");
 const pick5 = document.getElementById("pick5");
 
 const output = document.getElementById("outputText");
+
+
+
+
+
+
+
+
+
+
+
+// ok so here for button 1 is the actual logic and 
+// what happens when its clicked ---------
+
+btn1.addEventListener("click", () => {
+
+  // this right here will actually show the current button
+  pick1.textContent = subjects[i1];
+
+  // then we increment it
+  i1++;
+
+  // if we reach the end, loop back
+  if (i1 >= subjects.length) {
+    i1 = 0;
+  }
+
+});
