@@ -204,3 +204,31 @@ randomBtn.addEventListener("click", function () {
 
 
 
+
+
+
+
+
+// ok and finall we can add a Reset button
+// if the user clickes the reset this function runs
+// it will reset to defualt and text content displays the below outputs
+resetBtn.addEventListener("click", function () {
+
+  pick1.textContent = "Please Choose subject";
+  pick2.textContent = "Please Choose action";
+  pick3.textContent = "Please Choose descriptor";
+  pick4.textContent = "Please Choose object";
+  pick5.textContent = "Please Choose location";
+
+  output.textContent = "Your story will appear here.";
+
+  i1 = i2 = i3 = i4 = i5 = 0;
+
+});
+
+
+
+
+
+
+
