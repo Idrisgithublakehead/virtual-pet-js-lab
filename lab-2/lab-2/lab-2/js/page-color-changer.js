@@ -1,4 +1,100 @@
+
 // idris zahir lab 2 java script
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    // grab the sliders
+    const redSlider = document.getElementById("red");
+    const greenSlider = document.getElementById("green");
+    const blueSlider = document.getElementById("blue");
+
+    // grab the html element so the background changes the whole page
+    const pageBody = document.documentElement;
+
+    // builds an rgb() string from the slider values
+    function buildRGBColor() {
+        let r = redSlider.value;
+        let g = greenSlider.value;
+        let b = blueSlider.value;
+
+        return `rgb(${r}, ${g}, ${b})`;
+    }
+
+    // applies the rgb color to the page
+    function applyBackgroundColor() {
+        let rgbColor = buildRGBColor();
+        pageBody.style.backgroundColor = rgbColor;
+    }
+
+    // run once when page loads
+    applyBackgroundColor();
+
+    // update while sliding
+    redSlider.addEventListener("input", applyBackgroundColor);
+    greenSlider.addEventListener("input", applyBackgroundColor);
+    blueSlider.addEventListener("input", applyBackgroundColor);
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* idris zahir lab 2 java script
 //so first we need to grab the sliders in the html file
 // we grab red green blue and sent a const pagebody
 
@@ -7,7 +103,8 @@ const greenSlider = document.getElementById("green");
 const blueSlider = document.getElementById("blue");
 
 // Select the body element
-const pageBody = document.body;
+const pageBody = document.documentElement; // this is the <html> element
+
 
 
 
@@ -47,3 +144,5 @@ greenSlider.addEventListener("input", function () {
 blueSlider.addEventListener("input", function () {
     applyBackgroundColor();
 });
+
+*/
