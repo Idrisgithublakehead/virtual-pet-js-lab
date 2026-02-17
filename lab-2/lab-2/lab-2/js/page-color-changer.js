@@ -12,7 +12,7 @@ const pageBody = document.body;
 
 
 
-// function that builds the rgb color string
+// ok so this code below is a function that grabs the values of the slider and puts them in a variable.
 function buildRGBColor() {
 
     let r = redSlider.value;
