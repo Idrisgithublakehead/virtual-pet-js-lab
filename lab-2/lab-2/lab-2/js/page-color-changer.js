@@ -23,7 +23,7 @@ function buildRGBColor() {
 }
 
 
-// function that applies the color to the page
+
 function applyBackgroundColor() {
 
     let rgbColor = buildRGBColor();
@@ -35,7 +35,7 @@ function applyBackgroundColor() {
 applyBackgroundColor();
 
 
-// each slider will have its own  event listener
+// now we can set each slider so it will have its own  event listener
 redSlider.addEventListener("input", function () {
     applyBackgroundColor();
 });
